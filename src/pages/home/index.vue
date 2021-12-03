@@ -80,7 +80,7 @@ getHomeData()
 
   .nav-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 15px;
     width: 100%;
@@ -90,7 +90,8 @@ getHomeData()
 
     .search-btn {
       background-color: #5babfb;
-      width: 50%;
+      width: 70%;
+      font-size: 16px;
     }
   }
 }

@@ -32,12 +32,13 @@
           <span class="article-item-label">评论:{{ item.comm_count }}</span>
           <span>发布时间:{{ timeStr(item.pubdate) }}</span>
         </template>
-        <van-image
-            v-if="item.cover.type === 1"
-            fit="cover"
-            :src="item.cover.images[0]"
-            class="cover-left-img"
-        />
+        <template v-if="item.cover.type === 1" #value>
+          <van-image
+              fit="cover"
+              :src="item.cover.images[0]"
+              class="cover-left-img"
+          />
+        </template>
       </van-cell>
     </van-list>
   </van-pull-refresh>
@@ -96,7 +97,6 @@ function onRefresh() {
 }
 
 const timeStr = (str) => {
-  console.log(str)
   return str.substr(0, 10)
 }
 </script>
