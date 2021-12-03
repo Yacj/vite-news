@@ -1,0 +1,69 @@
+a img {
+  border: 0
+}
+
+body,
+ul,
+dl,
+dd,
+dt,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+textarea,
+form,
+select,
+fieldset,
+table,
+td,
+div,
+input {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  vertical-align: 0
+}
+
+input {
+  outline: none;
+  border: none
+}
+
+a {
+  text-decoration: none;
+  color: inherit
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", STHeiti, "Microsoft Yahei", Tahoma, Simsun, sans-serif;
+  color: #333;
+  background-color: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100vh;
+}
